@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import { MONGO_URI } from "./conf";
 
 mongoose
-	.connect("")
+	.connect(MONGO_URI)
 	.then(() => {
 		console.log("Connected");
 	})
