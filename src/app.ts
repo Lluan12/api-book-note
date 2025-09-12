@@ -13,5 +13,8 @@ app.use(cors());
 
 app.use("/api/books", booksRouter);
 app.use("/api/notes", notesRouter);
+app.use("/", (req, res) => {
+	res.send("hola")
+})
 
 export default app;
